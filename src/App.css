@@ -3,39 +3,92 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
+  color: #FEE466;
 }
 
-.content {}
-
-.content--div{}
-
-.content--p {}
-
-.content--img {}
-
-.form {
-  width: 500px;
-  height: 500px;
-  margin:25vh auto;
-  border: black 1px solid;
-text-align: center;
+body {
+  background-image: url('https://raw.githubusercontent.com/Nikara4/SW_W9_T1_React_context/main/public/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-height: 50vh;
 }
 
-.form--label{
+.content {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content--p {
   display: block;
-  margin: 70px 0;
+  margin: 70px auto;
   font-size: 40px;
 }
 
-.form--input{
-  width: 80%;
+.content--video {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content--button{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 50px 0;
+  padding: 10px 30px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 2px solid #FEE466;
+  transition: .3s;
+}
+
+.content--button:hover {
+  background-color: #FEE466;
+  border: 2px solid black;
+  color: black;
+}
+
+.form {
+  width: 40%;
+  height: 500px;
+  margin: 25vh auto;
+  text-align: center;
+}
+
+.form--label {
+  display: block;
+  margin: 70px 0;
+  font-size: 60px;
+}
+
+.form--input {
+  width: 60%;
   min-height: 10%;
   padding: 0 20px;
   font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px solid #FEE466;
+  color: #FEE466;
 }
 
-.form--button{
+.form--button {
   margin: 50px;
   padding: 10px 30px;
   font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: 2px solid black;
+  transition: .3s;
+}
+
+.form--button:hover {
+  background-color: #FEE466;
+  border: 2px solid black;
+  color: black;
 }

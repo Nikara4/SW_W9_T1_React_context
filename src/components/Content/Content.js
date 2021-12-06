@@ -11,10 +11,14 @@ const Content = () => {
     e.preventDefault();
   };
 
+  const handleFurtherButton = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="content--div">
+    <div>
       {isAuthenticated ? (
-        <MainContent />
+        <MainContent handleClick={handleFurtherButton} />
       ) : (
         <AlertContent handleClick={handleBackButton} />
       )}

@@ -9,7 +9,9 @@ const AlertContent = (props) => {
         alt=""
         src="https://zombiesruineverything.files.wordpress.com/2013/11/obs3.jpg"
       />
-      <button onClick={props.handleClick}>Try again</button>
+      <button className="content--button" onClick={props.handleClick}>
+        Try again
+      </button>
     </div>
   );
 };
