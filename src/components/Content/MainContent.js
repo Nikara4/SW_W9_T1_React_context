@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainContent = (props) => {
   return (
     <div className="content">
@@ -15,10 +17,10 @@ const MainContent = (props) => {
         className="content--video"
       ></iframe>
       <button className="content--button" onClick={props.handleClick}>
-        You may go further away
+        <Link>You may go further away</Link>
       </button>
       <button className="content--button" onClick={props.handleClick}>
-        You may go back
+        <Link>You may go back</Link>
       </button>
     </div>
   );
