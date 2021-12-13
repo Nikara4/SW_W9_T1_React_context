@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { PassphraseProvider } from "./../PassphraseForm";
+import { useContext } from "react";
 
-import { Provider, Form } from ".";
-import Content from "./../Content";
+const PassphraseForm = () => {
+  const { setIsAuthenticated } = useContext(PassphraseProvider);
 
-const PassphraseForm = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const password = e.target.passphrase.value;
 
-  const formSubmit = (password) => {
     if (password === "iwanttoseethebaby") {
       return setIsAuthenticated(true);
     } else {
@@ -17,12 +18,21 @@ const PassphraseForm = ({ children }) => {
   };
 
   return (
-    <Provider value={{ isAuthenticated: true }}>
-      {isAuthenticated ? children : <Form onFormSubmit={formSubmit} />}
-    </Provider>
+    <form onSubmit={handleSubmit} type="submit" className="form">
+      <label htmlFor="passphrase" className="form--label">
+        This is the way:
+      </label>
+      <input
+        id="passphrase"
+        placeholder="Show me the way"
+        type="password"
+        className="form--input"
+      />
+      <button type="password" className="form--button">
+        I have spoken.
+      </button>
+    </form>
   );
 };
-
-PassphraseForm.Content = Content;
 
 export default PassphraseForm;

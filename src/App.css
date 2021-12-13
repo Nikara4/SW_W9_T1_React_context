@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
-  color: #FEE466;
+  font-family: "Roboto Mono", monospace;
+  color: #fee466;
 }
 
 body {
-  background-image: url('https://raw.githubusercontent.com/Nikara4/SW_W9_T1_React_context/main/public/img/background.jpg');
+  background-image: url("https://raw.githubusercontent.com/Nikara4/SW_W9_T1_React_context/main/public/img/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,12 +44,12 @@ body {
   font-size: 24px;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  border: 2px solid #FEE466;
-  transition: .3s;
+  border: 2px solid #fee466;
+  transition: 0.3s;
 }
 
 .content--button:hover {
-  background-color: #FEE466;
+  background-color: #fee466;
   border: 2px solid black;
   color: black;
 }
@@ -73,8 +73,8 @@ body {
   padding: 0 20px;
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid #FEE466;
-  color: #FEE466;
+  border: 2px solid #fee466;
+  color: #fee466;
 }
 
 .form--button {
@@ -84,11 +84,46 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   border: 2px solid black;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .form--button:hover {
-  background-color: #FEE466;
+  background-color: #fee466;
   border: 2px solid black;
   color: black;
+}
+
+.nav {
+  max-width: 17vw;
+  height: 100vh;
+  background-color: #2060ab;
+  text-align: left;
+}
+
+.nav--ul {
+  list-style: none;
+}
+
+.nav--li {
+  padding: 15px;
+}
+
+.nav--link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.nav--link:hover {
+  text-decoration: underline;
+}
+
+.nav--icon__desktop {
+  margin-right: 10px;
+  font-size: 1.6rem;
+}
+
+.nav--icon__mobile {
+  margin-left: 10px;
+  font-size: 2rem;
 }
