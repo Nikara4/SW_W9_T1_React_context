@@ -34,7 +34,7 @@ body {
   transform: translateX(-50%);
 }
 
-.content--button{
+.content--button {
   position: absolute;
   bottom: 0;
   left: 50%;

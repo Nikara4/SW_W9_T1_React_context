@@ -15,7 +15,10 @@ const MainContent = (props) => {
         className="content--video"
       ></iframe>
       <button className="content--button" onClick={props.handleClick}>
-        You may go further away...
+        You may go further away
+      </button>
+      <button className="content--button" onClick={props.handleClick}>
+        You may go back
       </button>
     </div>
   );

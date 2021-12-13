@@ -1,15 +1,19 @@
 import { useState } from "react";
 
 import { Provider, Form } from ".";
-import { checkIfTrue } from "./../../utils/functions";
 import Content from "./../Content";
 
 const PassphraseForm = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const formSubmit = (password) => {
-    const result = checkIfTrue(password);
-    setIsAuthenticated(result);
+    if (password === "iwanttoseethebaby") {
+      return setIsAuthenticated(true);
+    } else {
+      alert(
+        `You don't need to be on this site. You can go about your business.`
+      );
+    }
   };
 
   return (
