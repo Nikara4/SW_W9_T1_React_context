@@ -15,43 +15,44 @@ body {
   max-height: 50vh;
 }
 
-.content {
-  width: 45%;
+/* .navbar {
+} */
+
+.main {
+  width: 80%;
+  position: absolute;
+  top: 15px;
+  left: 80px;
+}
+
+.main--img {
+  margin-top: 25px;
+  width: 80%;
+}
+
+.main--title {
+  font-size: 24px;
+}
+
+.main--title__h2 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.movies {
+  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-.content--p {
+.movies--p {
   display: block;
-  margin: 70px auto;
-  font-size: 40px;
+  margin: 10px auto;
+  font-size: 44px;
 }
 
-.content--video {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.content--button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 50px 0;
-  padding: 10px 30px;
-  font-size: 24px;
-  background-color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  border: 2px solid #fee466;
-  transition: 0.3s;
-}
-
-.content--button:hover {
-  background-color: #fee466;
-  border: 2px solid black;
-  color: black;
+.movies--video {
+  margin: 50px 25px;
 }
 
 .form {

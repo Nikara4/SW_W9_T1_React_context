@@ -1,11 +1,11 @@
-import { FaHome, FaArrowLeft, FaChessRook, FaFilm } from "react-icons/fa";
+import { FaHome, FaChessRook, FaFilm } from "react-icons/fa";
 import NavLink from "./NavLink";
 
 const NavDesktop = () => {
   return (
     <nav className="nav">
       <ul className="nav--ul">
-        <NavLink path="/main">
+        <NavLink exact="true" path="/">
           <FaHome className="nav--icon__desktop" />
           home
         </NavLink>
